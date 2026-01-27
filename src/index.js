@@ -35,6 +35,6 @@ const num = 12;
 if (num >= 10 && num <= 20 && num !== 15) {
   console.log("O numero está entre 10 e 20 e não é 15");
 } else {
-  console.log("O numero não cumpre as condições");
+  console.log("O numero não é 15.");
 }
 
