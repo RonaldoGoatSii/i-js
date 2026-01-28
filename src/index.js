@@ -29,12 +29,28 @@
 //   console.log("A idade não é igual a 1!")
 // }
 
-const num = 12;
+
+//////////////////////////////////////////////////////////////
+
+//let num = 12;
+//if (num >= 10 && num <= 20 && num !== 15) {
+//  console.log("O numero está entre 10 e 20 e não é 15");
+//} else {
+//  console.log("O numero não é 15.");
+//}
+
+///////////////////////////////////////////////////////////////
 
 
-if (num >= 10 && num <= 20 && num !== 15) {
-  console.log("O numero está entre 10 e 20 e não é 15");
-} else {
-  console.log("O numero não é 15.");
+prompt = require('prompt-sync')();
+
+let number = parseInt(prompt('Insere um valor: '));
+
+function verValor(numero) {
+    if (numero % 5 === 0) {
+        console.log("O número é múltiplo de 5.");
+        return; 
+    }
 }
 
+verValor(number);
