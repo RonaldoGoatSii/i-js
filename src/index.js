@@ -42,15 +42,92 @@
 ///////////////////////////////////////////////////////////////
 
 
-prompt = require('prompt-sync')();
+//////////////////////////////////////////////////////////////
+
+// const numero = 12; 
+
+// if (numero === 5 || numero === 10 || numero === 15) {
+//     console.log("Código interrompido.");
+// } else {
+
+//     const mensagem = numero >= 10 ? "Aprovado" : "Reprovado";
+//     console.log(mensagem);
+// }
+
+///////////////////////////////////////////////////////////////
+
+//  prompt = require('prompt-sync')();
+
+// let number = parseInt(prompt('Insere um valor: '));
+
+//  function verValor(numero) {
+//     if (numero % 5 === 0) {
+//         console.log("O número é múltiplo de 5.");
+//         return; 
+//     }
+// }
+
+// verValor(number);
+
+
+///////////////////////////////////////////////////////////////
+
+// function getFullName(firstName, lastName) {
+//   console.log('Creating user...');
+//   console.log(`O primeiro nome é ${firstName}`);
+//   console.log(`O sobrenome é ${lastName}`);
+
+//   return `Seu nome completo é ${firstName} ${lastName}`;
+// }
+
+// const fName = 'João';
+// const lName = 'Silva';
+// const fullName = getFullName(fName, lName)
+
+// //---
+
+// // Itens repetidos
+// // Variar tipos
+// // Alterar/adicionar/remover os itens dessa lista
+// const fruits = ["apple", 1, "apple", 2, "melon", "orange", "banana", "pineapple"]
+// const firstFruit = fruits[0]
+
+// // const fruits_kcal = {
+// //   "apple": 86,
+// //   "melon": 110,
+// //   "orange": 66
+// // }
+
+// const fruits_kcal = {}
+// fruits_kcal["apple"] = 86
+// fruits_kcal["melon"] = 110
+// fruits_kcal["orange"] = 66
+
+//////////////////////////////////////////////
+
+///////////////////////////////////////////////
+
+const prompt = require('prompt-sync')();
 
 let number = parseInt(prompt('Insere um valor: '));
 
 function verValor(numero) {
-    if (numero % 5 === 0) {
-        console.log("O número é múltiplo de 5.");
-        return; 
+
+    if (numero === 15) {
+        return "É igual a 15";
     }
+
+    if (numero % 5 === 0) {
+        return "Função interrompida, pois o número é múltiplo de 5";
+    }
+
+    return (numero >= 10 && numero <= 20) 
+        ? "Está entre 10 e 20" 
+        : "Não está entre 10 e 20";
 }
 
-verValor(number);
+
+console.log(verValor(number));
+
+
+///////////////////////////////////////////////
