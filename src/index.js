@@ -131,3 +131,54 @@ console.log(verValor(number));
 
 
 ///////////////////////////////////////////////
+
+//////////////////// CLASSES E CONSTRUTORES /////////////////////////
+
+class Student {
+  constructor(id, name, grades, role) {
+    this.id = id;
+    this.name = name;
+    this.grades = grades;
+    this.role = role;
+  }
+
+}
+
+const studentA = Student(1, "Bruno", [1, 2, 3], "default");
+const studentB = Student(2, "Jose", [3, 4, 5], "admin");
+
+
+
+//////////////////////////////////////////////
+
+
+//////////////////// CLASSES E CONSTRUTORES /////////////////////////
+
+class Dog {
+  constructor(race, color, name) {
+    this.race = race;
+    this.color = color;
+    this.name = name;
+  }
+
+  bark(what){
+    console.log(`O cachorro ${this.name} latiu para ${what}!`);
+  }
+  bite(who){
+    console.log(`O cachorro ${this.name} mordeu a/o ${who}!`);
+  }
+}
+
+const doginho = Dog("Bacê", "Marrom", "Pituca");
+const catcholo = Dog("Pitbull", "Branco", "Mancha");
+
+doginho.bark("Bruno");
+doginho.bark("Christian");
+catcholo.bite("Cleber");
+
+//////////////////////////////////////////////
+
+
+
+
+
